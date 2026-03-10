@@ -1,5 +1,5 @@
 [![Build](https://github.com/ShivamKR12/Flippy/actions/workflows/build.yml/badge.svg)](https://github.com/ShivamKR12/Flippy/actions/workflows/build.yml)
-[![Release](https://img.shields.io/github/v/release/ShivamKR12/Flippy)](https://github.com/ShivamKR12/Flippy/releases)
+[![Release](https://img.shields.io/github/v/release/ShivamKR12/Flippy?cacheSeconds=60)](https://github.com/ShivamKR12/Flippy/releases)
 
 # Flippy
 
