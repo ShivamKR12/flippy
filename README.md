@@ -1,3 +1,6 @@
+[![Build](https://github.com/ShivamKR12/Flippy/actions/workflows/build.yml/badge.svg)](https://github.com/ShivamKR12/Flippy/actions/workflows/build.yml)
+[![Release](https://img.shields.io/github/v/release/ShivamKR12/Flippy)](https://github.com/ShivamKR12/Flippy/releases)
+
 # Flippy
 
 A classic Reversi (Othello) game implemented in Python using Pygame-CE. Play against the computer with a simple AI opponent.
@@ -23,7 +26,7 @@ A classic Reversi (Othello) game implemented in Python using Pygame-CE. Play aga
 ### Option 1: Run from Source
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ShivamKR12/flippy.git
+   git clone https://github.com/ShivamKR12/Flippy.git
    cd flippy
    ```
 
@@ -38,7 +41,7 @@ A classic Reversi (Othello) game implemented in Python using Pygame-CE. Play aga
    ```
 
 ### Option 2: Use Standalone Executable
-Download the executable from the [Releases](https://github.com/ShivamKR12/flippy/releases) page:
+Download the executable from the [Releases](https://github.com/ShivamKR12/Flippy/releases) page:
 
 No installation required - just run the executable.
 
