@@ -25,7 +25,16 @@ jobs:
 
       - name: Build executable with PyInstaller
         run: |
-          pyinstaller flippy.spec
+          pyinstaller --clean --noconfirm flippy.spec
+
+      - name: Decode signing certificate
+        run: |
+          echo "${{ secrets.WINDOWS_CERTIFICATE }}" > cert.txt
+          certutil -decode cert.txt flippy.pfx
+
+      - name: Sign EXE
+        run: |
+          signtool sign /f flippy.pfx /p ${{ secrets.CERT_PASSWORD }} /fd SHA256 /tr http://timestamp.digicert.com /td SHA256 dist/flippy.exe
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
