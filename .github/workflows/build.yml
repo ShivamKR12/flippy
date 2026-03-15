@@ -50,11 +50,15 @@ jobs:
             /td SHA256 `
             dist\flippy.exe
 
+      - name: Zip executable
+        run: |
+          Compress-Archive -Path dist\flippy.exe -DestinationPath dist\flippy.zip -Force
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v${{ github.run_number }}
-          name: Flippy v${{ github.run_number }}
-          files: dist/flippy.exe
+          tag_name: v1.0.${{ github.run_number }}
+          name: Flippy v1.0.${{ github.run_number }}
+          files: dist/flippy.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
